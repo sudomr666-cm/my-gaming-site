@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>VLN666 Gaming Platform</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+
+  /* লোগো ও টাইটেল */
+  .logo-container {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+
+  .logo-container svg {
+    height: 50px;
+    width: auto;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+
+  /* ন্যাভিগেশন */
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    color: #ff0;
+  }
+
+  /* গেম কার্ড বা গেম লিস্ট */
+  .games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .game-card {
+    background-color: #333;
+    margin: 10px;
+    padding: 15px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #000;
+    text-align: center;
+  }
+
+  .game-card h2 {
+    margin-top: 0;
+  }
+
+  .game-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  /* বোতাম স্টাইল */
+  .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ff4b2b;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1em;
+  }
+
+  .btn:hover {
+    background-color: #ff6347;
+  }
+
+  /* শেয়ার অপশন */
+  .share-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .share-buttons a {
+    margin: 0 8px;
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* অন্যান্য সেকশন */
+  section {
+    padding: 20px;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  /* ফুটার */
+  footer {
+    background-color: #1f1f1f;
+    padding: 15px;
+    text-align: center;
+    margin-top: 30px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <!-- লোগো -->
+  <div class="logo-container">
+    <svg xmlns="http://www.w3.org/2000/svg" width="150" height="50" viewBox="0 0 200 50">
+      <defs>
+        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#ff4b2b;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#ff6347;stop-opacity:1" />
+        </linearGradient>
+      </defs>
+      <!-- এখানে লেখা "VLN666" -->
+      <text x="10" y="35" font-family="Arial, sans-serif" font-size="40" fill="url(#grad)" font-weight="bold">VLN666</text>
+    </svg>
+  </div>
+  <h1>VLN666 Gaming Portal</h1>
+  <nav>
+    <a href="#games">Games</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- গেম লিস্ট -->
+<div class="games" id="games">
+
+  <!-- গেম ১ -->
+  <div class="game-card">
+    <h2>Game 1</h2>
+    <img src="https://images.unsplash.com/photo-1616572868353-61839634b615?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" class="game-image" alt="Game 1 Image" />
+    <p>Exciting action game.</p>
+    <a href="https://example.com/game1-download" target="_blank" class="btn">Download</a>
+    <div class="share-buttons">
+      <a href="https://facebook.com/sharer/sharer.php?u=https://yourgamepage.com" target="_blank" title="Share on Facebook">🌐 FB</a>
+      <a href="https://twitter.com/share?url=https://yourgamepage.com&text=Check+out+this+awesome+game!" target="_blank" title="Share on Twitter">🐦 TW</a>
+      <a href="https://wa.me/?text=Check+out+this+awesome+game!+https://yourgamepage.com" target="_blank" title="Share on WhatsApp">📱 WA</a>
+    </div>
+  </div>
+
+  <!-- গেম ২ -->
+  <div class="game-card">
+    <h2>Game 2</h2>
+    <img src="https://images.unsplash.com/photo-1623704062288-6734b8687d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" class="game-image" alt="Game 2 Image" />
+    <p>Epic adventure game.</p>
+    <a href="https://example.com/game2-download" target="_blank" class="btn">Download</a>
+    <div class="share-buttons">
+      <a href="https://facebook.com/sharer/sharer.php?u=https://yourgamepage.com" target="_blank" title="Share on Facebook">🌐 FB</a>
+      <a href="https://twitter.com/share?url=https://yourgamepage.com&text=Check+out+this+awesome+game!" target="_blank" title="Share on Twitter">🐦 TW</a>
+      <a href="https://wa.me/?text=Check+out+this+awesome+game!+https://yourgamepage.com" target="_blank" title="Share on WhatsApp">📱 WA</a>
+    </div>
+  </div>
+
+  <!-- গেম ৩ -->
+  <div class="game-card">
+    <h2>Game 3</h2>
+    <img src="https://images.unsplash.com/photo-1628243906711-257d2af2f3b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" class="game-image" alt="Game 3 Image" />
+    <p>Fast-paced racing game.</p>
+    <a href="https://example.com/game3-download" target="_blank" class="btn">Download</a>
+    <div class="share-buttons">
+      <a href="https://facebook.com/sharer/sharer.php?u=https://yourgamepage.com" target="_blank" title="Share on Facebook">🌐 FB</a>
+      <a href="https://twitter.com/share?url=https://yourgamepage.com&text=Check+out+this+awesome+game!" target="_blank" title="Share on Twitter">🐦 TW</a>
+      <a href="https://wa.me/?text=Check+out+this+awesome+game!+https://yourgamepage.com" target="_blank" title="Share on WhatsApp">📱 WA</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- About Us -->
+<section id="about">
+  <h2>About Us</h2>
+  <p>We are passionate about gaming! Our site features the latest and greatest games for everyone.</p>
+</section>
+
+<!-- Contact Us -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: contact@vln666.com</p>
+</section>
+
+<!-- ফুটার -->
+<footer>
+  &copy; 2025 VLN666 Gaming Platform. All rights reserved.
+</footer>
+
+</body>
+</html
